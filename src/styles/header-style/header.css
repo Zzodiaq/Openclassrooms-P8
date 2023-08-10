@@ -1,3 +1,21 @@
-
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+  color: #FF6060;
+  font-size: 24px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+header nav .link {
+  text-decoration: none;
+  color: #FF6060;
+}
+header nav .link.active {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=header.css.map */

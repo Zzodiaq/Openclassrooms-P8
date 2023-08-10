@@ -1,0 +1,22 @@
+$primary : #FF6060;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+    color: $primary;
+    font-size: 24px;
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        .link {
+            text-decoration: none;
+            color: $primary;
+        }
+        .link.active {
+            text-decoration: underline;
+        }
+    }
+}
+
