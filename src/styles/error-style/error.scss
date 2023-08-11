@@ -1,0 +1,21 @@
+$primary : #FF6060;
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
+    gap: 5rem;
+    h1 {
+        font-size: 12rem;
+        margin: 0;
+    }
+    p {
+        font-size: 2rem;
+    }
+    a {
+        text-decoration: underline;
+        color: $primary;
+    }
+}

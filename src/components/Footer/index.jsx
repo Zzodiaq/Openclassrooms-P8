@@ -1,9 +1,12 @@
+import logoWhite from '../../images/logoWhite.PNG'
+import '../../styles/footer-style/footer.css'
 
 function Footer() {
     return (
-        <div>
-            <p>fffffffffffffffffffff</p>
-        </div>
+        <footer>
+            <img src={logoWhite} alt='error'/>
+            <p>© 2020 Kasa. All rights reserved</p>
+        </footer>
     )
 }
 
