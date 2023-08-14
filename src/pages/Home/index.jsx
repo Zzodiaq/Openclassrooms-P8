@@ -6,14 +6,13 @@ import Card from "../../components/Card/index.jsx"
 import data from "../../data.json"
 
 function App() {
-  const sixFirst = data.slice(0, 6);
 
   return (
     <div className="App">
       <body>
         <Banner imageSrc={nature1} showText={true}/>
         <div className='card-container'>
-          {sixFirst.map((e) => (
+          {data.map((e) => (
             <Card key={e.id} title={e.title} backgroundImage={e.cover} />
           ))}
         </div>
