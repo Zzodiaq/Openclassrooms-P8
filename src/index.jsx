@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './pages/Home/index'
+import Home from './pages/Home/index.jsx'
 import About from './pages/About/about.jsx'
 import Error from './pages/Error/error.jsx'
 import FicheLogement from './pages/FicheLogment/ficheLogment.jsx'
@@ -15,6 +15,7 @@ const HeaderWraper = ({child}) => (
     <>
     <Header/>
     {child}
+
     </>
     )
 

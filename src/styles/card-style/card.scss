@@ -1,0 +1,13 @@
+.card {
+    border-radius: 10px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    p {
+        bottom: 0;
+        color: white;
+        left: 10px;
+        position: absolute;
+    }
+}

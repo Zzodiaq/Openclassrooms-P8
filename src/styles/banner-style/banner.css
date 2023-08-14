@@ -1,0 +1,27 @@
+.banner1 {
+  border-radius: 20px;
+  margin: 2rem 5rem;
+  position: relative;
+  height: 14rem;
+  overflow: hidden;
+}
+.banner1 h2 {
+  margin: 0;
+  color: black;
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner1 img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  transform: translateY(-550px);
+}
+
+
+
+/*# sourceMappingURL=banner.css.map */

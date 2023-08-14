@@ -1,0 +1,40 @@
+$grey1 : #F6F6F6;
+
+.collapse {
+    button {
+        padding: 2rem;
+        background-color: #FF6060;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 60px;
+        max-height: 60px;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 24px;
+        .img-arrow {
+            width: 25px;
+            height: 15px;
+            transition: transform 0.5s ease-in-out;
+            transform: rotate(-180deg);
+        }
+        .img-rotate {
+            transition: transform 0.5s ease-in-out;
+            transform: rotate(-360deg);
+        }
+    }
+    .collapse-content {
+        background-color: $grey1;
+        padding: 2rem 1rem 2rem 2rem;
+        font-size: 20px;
+        display: none;
+        color: #FF6060;
+    }
+    .collapse-contentOff{
+        transition: max-height 0.5s ease-in-out;
+        display: block;
+    }
+}

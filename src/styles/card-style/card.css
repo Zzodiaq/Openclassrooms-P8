@@ -1,0 +1,15 @@
+.card {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: black;
+}
+.card p {
+  bottom: 0;
+  color: white;
+  left: 10px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=card.css.map */

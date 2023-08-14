@@ -1,0 +1,15 @@
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 15rem;
+  gap: 2rem;
+}
+html {
+  height: 100%;
+}
+
+/* body{
+  display: flex;
+  flex-direction: column;
+} */
+/*# sourceMappingURL=about.css.map */
