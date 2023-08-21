@@ -1,13 +1,14 @@
 import '../../styles/card-style/card.css'
+import { Link } from 'react-router-dom';
 
-function Card({title, backgroundImage}) {
+function Card({id, title, backgroundImage}) {
     const divBgImage = {
         backgroundImage : `url(${backgroundImage})`,
     }
     return (
-        <card className='card' style={divBgImage}>
+        <Link to={`/logement/${id}`} className='card' style={divBgImage}>
             <p>{title}</p>
-        </card>
+        </Link>
     )
 }
 

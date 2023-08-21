@@ -9,14 +9,14 @@ function App() {
 
   return (
     <div className="App">
-      <body>
+      <div className='bod'>
         <Banner imageSrc={nature1} showText={true}/>
         <div className='card-container'>
           {data.map((e) => (
-            <Card key={e.id} title={e.title} backgroundImage={e.cover} />
+            <Card key={e.id} id={e.id} title={e.title} backgroundImage={e.cover} />
           ))}
         </div>
-      </body>
+      </div>
     </div>
   );
 }

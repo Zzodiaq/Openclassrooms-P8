@@ -27,12 +27,16 @@
   background-color: #F6F6F6;
   padding: 2rem 1rem 2rem 2rem;
   font-size: 20px;
-  display: none;
+  display: block;
   color: #FF6060;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .collapse .collapse-contentOff {
-  transition: max-height 0.5s ease-in-out;
-  display: block;
+  max-height: 1000px;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=collapse.css.map */

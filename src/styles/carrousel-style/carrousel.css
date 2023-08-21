@@ -1,0 +1,52 @@
+.carrousel-container {
+  margin: 5rem 5rem;
+}
+.carrousel-container .carrousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.carrousel-container .carrousel p {
+  position: absolute;
+  color: white;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carrousel-container .carrousel .nav-button-prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: none;
+}
+.carrousel-container .carrousel .nav-button-prev img {
+  transform: rotate(90deg);
+  width: 60px;
+  height: 40px;
+}
+.carrousel-container .carrousel .nav-button-next {
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+}
+.carrousel-container .carrousel .nav-button-next img {
+  transform: rotate(-90deg);
+  width: 60px;
+  height: 40px;
+}
+.carrousel-container .carrousel .img-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=carrousel.css.map */

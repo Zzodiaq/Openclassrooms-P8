@@ -30,11 +30,21 @@ $grey1 : #F6F6F6;
         background-color: $grey1;
         padding: 2rem 1rem 2rem 2rem;
         font-size: 20px;
-        display: none;
+        display: block;
         color: #FF6060;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
     .collapse-contentOff{
-        transition: max-height 0.5s ease-in-out;
-        display: block;
+        max-height: 1000px;
+        opacity: 1;
     }
 }
+
+// @media (max-width: 700px) {
+//     .collapse {
+
+//     }
+// } 
