@@ -5,6 +5,7 @@
   align-items: center;
   color: #FF6060;
   gap: 5rem;
+  min-height: 100vh;
 }
 .error-page h1 {
   font-size: 12rem;
@@ -16,6 +17,10 @@
 .error-page a {
   text-decoration: underline;
   color: #FF6060;
+}
+
+.push {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=error.css.map */

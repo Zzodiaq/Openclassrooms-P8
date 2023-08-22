@@ -36,6 +36,11 @@
     white-space: normal;
   }
 }
+@media (max-width: 350px) {
+  .banner1 h2 {
+    font-size: 20px;
+  }
+}
 
 
 /*# sourceMappingURL=banner.css.map */

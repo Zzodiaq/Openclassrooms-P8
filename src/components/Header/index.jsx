@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom'
 import '../../styles/header-style/header.css'
 import { NavLink } from 'react-router-dom'
 import logo from '../../images/logo.PNG'

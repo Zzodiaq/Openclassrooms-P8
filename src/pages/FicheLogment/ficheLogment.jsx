@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as fasFaStar} from '@fortawesome/free-solid-svg-icons'
 import { faStar as farFaStar} from '@fortawesome/free-regular-svg-icons'
 import Collapse from '../../components/Collapse/index.jsx'
+import '../../styles/font-style/font.css'
 
 function FicheLogement() {
 
@@ -28,47 +29,49 @@ function FicheLogement() {
         x++;
       }
     return (
-        <div>
+        <div className="logement">
             <Carrousel images={currentLogement.pictures} length={currentLogement.pictures.length}/>
             <div className="logement-description">
-                <div className="title">
+                <div className="title-tag">
                     <div className="left">
                         <h1>{currentLogement.title}</h1>
                         <h3>{currentLogement.location}</h3>
                     </div>
-                    <div className="right">
-                        <h3>{currentLogement.host.name}</h3>
-                        <img src={currentLogement.host.picture} alt="error" />
-                    </div>
-                </div>
-                <div className="tag-rate">
-                    <div className="left">
+                    <div className="left2">
                     {currentLogement.tags.map((e, index) => (
                         <div className="tag-style" key={index}>
                             <p>{e}</p>
                         </div>
                     ))}
                     </div>
-                    <div className="right">
-                    {stars.map((e) => (
-                        e
-                    ))}
-                    </div>
                 </div>
-                <div className="collapse-container">
-                    <div className="left">
-                    <Collapse key={`description-${currentLogement.id}`} title='Description' description={currentLogement.description} />
-                    </div>
+                <div className="nameAndStars">
                     <div className="right">
-                    {/* <Collapse className='collapse-cont' key={`equipement-${currentLogement.id}`} title='Équipement' description={currentLogement.equipments.map((e) => e + <br> )} /> */}
-                    <Collapse className='collapse-cont' key={`equipement-${currentLogement.id}`} title='Équipement' description={currentLogement.equipments.map((e, index) => (
-                            <p key={index}>
-                            {e}
-                            </p>
-                        ))} />
+                        <h3>{currentLogement.host.name}</h3>
+                        <img src={currentLogement.host.picture} alt="error" />
+                    </div>
 
-                    </div> 
+                    <div className="right2">
+                        {stars.map((e) => (
+                            e
+                        ))}
+                    </div>
                 </div>
+            </div>
+            <div className="collapse-container">
+                <div className="left">
+                <Collapse key={`description-${currentLogement.id}`} title='Description' description={currentLogement.description} />
+                </div>
+                <div className="right">
+                <Collapse className='collapse-cont' key={`equipement-${currentLogement.id}`} title='Équipement' description={currentLogement.equipments.map((e, index) => (
+                        <p key={index}>
+                        {e}
+                        </p>
+                    ))} />
+                </div> 
+            </div>
+            <div className="push">
+
             </div>
         </div>
 

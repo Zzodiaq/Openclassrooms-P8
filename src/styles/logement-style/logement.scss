@@ -1,60 +1,69 @@
-.logement-description {
-    color: #FF6060;
-    margin: 2rem 5rem;
-    .title {
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.logement {
+    min-height: 100vh;
+    .logement-description {
         display: flex;
         flex-direction: row;
-        width: 100%;
-        .left {
-            width: 50%;
+        justify-content: space-between;
+        color: #FF6060;
+        margin: 1rem 5rem;
+        .title-tag{
+            .left {
+                h1 {
+                    margin: 0;
+                }
+            }
+            .left2 {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                .tag-style {
+                    font-size: small;
+                    background-color: #FF6060;
+                    border-radius: 15px;
+                    padding: 1px 2rem;
+                }
+            }
         }
-        .right {
+        .nameAndStars {
             display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            justify-content: flex-end;
-            width: 50%;
-            img {
-                border-radius: 70px;
-                width: 60px;
-                height: 60px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            .right {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+                justify-content: flex-end;
+                width: 50%;
+                img {
+                    border-radius: 70px;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .right2 {
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                justify-content: flex-end;
+                width: 50%;
             }
         }
     }
-    .tag-rate {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        .left {
-            color: white;
-            width: 50%;
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            .tag-style {
-                font-size: small;
-                background-color: #FF6060;
-                border-radius: 15px;
-                padding: 1px 2rem;
-            }
-        }
-        .right {
-            svg {
-                width: 30px;
-                height: 30px;
-            }
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            justify-content: flex-end;
-            width: 50%;
-        }
-    }
+    
     .collapse-container {
-        margin : 1rem 0 0 0 ;
+        margin : 2rem 5rem ;
         display: flex;
         flex-direction: row;
-        width: 100%;
         gap: 10rem;
         .left {
             width: 50%;
@@ -65,6 +74,73 @@
             width: 50%;
             display: flex;
             flex-direction: column;
+        }
+    }
+    .push {
+        flex-grow: 1;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .logement{
+        .logement-description {
+            margin: 1rem 1rem;
+            flex-direction: column;
+            .title-tag{
+                .left2 {
+                    .tag-style {
+                        font-size: 10px;
+                        background-color: #FF6060;
+                        border-radius: 15px;
+                        padding: 5px;
+                    }
+                }
+            }
+            .nameAndStars {
+                margin-top: 2rem;
+                flex-direction: row-reverse;
+                align-items: center;
+                .right2 {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    
+        .collapse-container {
+            margin: 2rem 1rem;
+            flex-direction: column;
+            gap: 1rem;
+            .left {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+            }
+        }
+    }
+} 
+
+@media (max-width: 450px) {
+    .logement {
+        .logement-description {
+            .nameAndStars {
+                .right {
+                    align-items: center;
+                    gap: 0.3rem;
+                    img {
+                        border-radius: 70px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .right2 {
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
         }
     }
 }

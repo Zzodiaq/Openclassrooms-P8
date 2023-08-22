@@ -2,7 +2,6 @@
     border-radius: 20px;
     margin: 2rem 5rem;
     position: relative;
-    height: 14rem;
     overflow: hidden;
    h2 {
         margin: 0;
@@ -33,6 +32,14 @@
                left: 50%;
                transform: translate(-50%, -50%);
                white-space: normal;
+          }
+     }
+ } 
+
+ @media (max-width: 350px) {
+     .banner1 {
+          h2 {
+               font-size: 20px;
           }
      }
  } 

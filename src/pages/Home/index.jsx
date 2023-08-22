@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import '../../styles/home-style/home.css'
 import Banner from  "../../components/Banner/index.jsx"
 import nature1 from '../../images/nature1.PNG'
